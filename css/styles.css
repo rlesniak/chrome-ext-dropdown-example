@@ -1,0 +1,48 @@
+:host {
+  font-size: 16px;
+  color: #000;
+  line-height: 21px;
+  font-family: Tahoma;
+  width: 180px;
+}
+
+.wrapper {
+  display: block;
+}
+
+.wrapper.active .list {
+  display: block;
+}
+
+.wrapper.active .label {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.label {
+  padding: 5px 10px;
+  background: #dedede;
+  border-radius: 3px;
+  color: #01002f;
+  border: 1px solid #9a9a9a;
+  cursor: pointer;
+}
+
+.list {
+  color: #000;
+  display: none;
+  background: #c7c7c7;
+  border: 1px solid #9a9a9a;
+  border-radius: 0 0 3px 3px;
+}
+
+.option {
+  cursor: pointer;
+  padding: 2px 10px;
+  border-bottom: 1px solid #9a9a9a;
+}
+
+.option:last-child {
+  border-bottom: 0;
+}

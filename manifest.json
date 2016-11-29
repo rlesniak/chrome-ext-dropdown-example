@@ -1,0 +1,26 @@
+{
+  "name": "ShadowDOM dropdown example",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Shadow DOM Demo",
+  "homepage_url": "http://railwaymen.org",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "*://www.homes.com/*"
+  ],
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "matches": [ "*://www.homes.com/property/*", "*://homes.com/property/*" ],
+      "js": [ "src/inject/dropdown.js", "src/inject/button.js", "src/inject/homes.js" ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    "css/*"
+  ]
+}
